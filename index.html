@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid CF - Site Officiel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="png" href="logo.png">
+    <meta name="theme-color" content="#FFD700">
+    <meta name="description" content="Site officiel du Real Madrid CF - Histoire, joueurs, trophées et légendes">
+</head>
+<body>
+    <!-- Audio pour l'hymne -->
+    <audio id="hymne" loop>
+        <source src="hymne.MP3" type="mpeg">
+    </audio>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Real Madrid Logo" class="logo" onerror="this.style.display='none'">
+                <span class="nav-title">REAL MADRID CF</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#histoire" class="nav-link">Histoire</a></li>
+                <li><a href="#joueurs-actuels" class="nav-link">Équipe Actuelle</a></li>
+                <li><a href="#anciens-joueurs" class="nav-link">Anciens Joueurs</a></li>
+                <li><a href="#trophees" class="nav-link">Trophées</a></li>
+                <li><a href="#legendes" class="nav-link">Légendes</a></li>
+                <li><a href="#entraineurs" class="nav-link">Entraîneurs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <div class="logo-background"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">¡HALA MADRID!</h1>
+            <p class="hero-subtitle">Le plus grand club de football du monde</p>
+            <button id="play-hymne" class="cta-button">🎵 Jouer l'Hymne</button>
+            <button id="stop-hymne" class="cta-button secondary">⏹️ Arrêter</button>
+        </div>
+        <div class="hero-image">
+        </div>
+    </section>
+
+    <!-- Section Histoire -->
+    <section id="histoire" class="section">
+        <div class="container">
+            <h2 class="section-title">Histoire du Club</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <h3>Fondation et Débuts (1902-1920)</h3>
+                    <p>Le Real Madrid Club de Fútbol a été fondé le 6 mars 1902 par Julián Palacios et les frères Juan et Carlos Padrós. Initialement nommé "Madrid Football Club", le club a reçu le titre "Real" (Royal) du roi Alphonse XIII en 1920.</p>
+                    
+                    <h3>L'Ère Bernabéu (1943-1978)</h3>
+                    <p>Santiago Bernabéu, président de 1943 à 1978, a transformé le club en une institution mondiale. Il a construit le stade Santiago Bernabéu et a créé la Coupe des Champions (aujourd'hui Ligue des Champions).</p>
+                    
+                    <h3>L'Ère Moderne (2000-Présent)</h3>
+                    <p>Le Real Madrid a dominé le football européen avec des joueurs comme Zidane, Ronaldo, Beckham, et plus récemment Cristiano Ronaldo, Bale, et Benzema. Le club a remporté 14 Ligues des Champions.</p>
+                </div>
+                <div class="history-images">
+                    <img src="founding.png" alt="Fondation du club" class="history-img" onerror="this.style.display='none'">
+                    <img src="bernabeu.jpg" alt="Santiago Bernabéu" class="history-img" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Joueurs Actuels -->
+    <section id="joueurs-actuels" class="section">
+        <div class="container">
+            <h2 class="section-title">Équipe Actuelle 2024</h2>
+            <div class="players-grid" id="current-players">
+                <!-- Les joueurs seront ajoutés via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Anciens Joueurs -->
+    <section id="anciens-joueurs" class="section">
+        <div class="container">
+            <h2 class="section-title">Anciens Joueurs Légendaires</h2>
+            <div class="players-grid" id="former-players">
+                <!-- Les anciens joueurs seront ajoutés via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Trophées -->
+    <section id="trophees" class="section">
+        <div class="container">
+            <h2 class="section-title">Palmarès et Trophées</h2>
+            <div class="trophies-container">
+                <div class="trophy-category">
+                    <h3>🏆 Ligue des Champions</h3>
+                    <div class="trophy-list">
+                        <div class="trophy-item">1956, 1957, 1958, 1959, 1960, 1966, 1998, 2000, 2002, 2014, 2016, 2017, 2018, 2022</div>
+                    </div>
+                </div>
+                <div class="trophy-category">
+                    <h3>🥇 Liga Espagnole</h3>
+                    <div class="trophy-list">
+                        <div class="trophy-item">1932, 1933, 1954, 1955, 1957, 1958, 1961, 1962, 1963, 1964, 1965, 1967, 1968, 1969, 1972, 1975, 1976, 1978, 1979, 1980, 1986, 1987, 1988, 1989, 1990, 1995, 1997, 2001, 2003, 2007, 2008, 2012, 2017, 2020, 2022</div>
+                    </div>
+                </div>
+                <div class="trophy-category">
+                    <h3>🏆 Coupe du Roi</h3>
+                    <div class="trophy-list">
+                        <div class="trophy-item">1905, 1906, 1907, 1908, 1917, 1934, 1936, 1946, 1947, 1962, 1970, 1974, 1975, 1980, 1982, 1989, 1993, 2011, 2014, 2023</div>
+                    </div>
+                </div>
+                <div class="trophy-category">
+                    <h3>🌍 Coupe du Monde des Clubs FIFA</h3>
+                    <div class="trophy-list">
+                        <div class="trophy-item">1960, 1998, 2002, 2014, 2016, 2017, 2018, 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Légendes -->
+    <section id="legendes" class="section">
+        <div class="container">
+            <h2 class="section-title">Légendes du Club</h2>
+            <div class="legends-grid" id="legends">
+                <!-- Les légendes seront ajoutées via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Entraîneurs -->
+    <section id="entraineurs" class="section">
+        <div class="container">
+            <h2 class="section-title">Entraîneurs du Real Madrid</h2>
+            <div class="coaches-grid" id="coaches">
+                <!-- Les entraîneurs seront ajoutés via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Real Madrid CF</h3>
+                    <p>Le plus grand club de football du monde</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>AMADOU DIALLO<br>dialloamadousadio2004@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ahmad.diallo.702985" class="social-link">Facebook</a>
+                        <a href="https://wa.me/627094044" class="social-link">WhatsApp</a>
+                        <a href="https://t.me/Ras_Al_Ghul_373393" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Real Madrid CF. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
