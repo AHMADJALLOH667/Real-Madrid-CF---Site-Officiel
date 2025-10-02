@@ -375,7 +375,7 @@ function setupHymne() {
             const testAudio = new Audio();
             testAudio.oncanplaythrough = () => resolve(true);
             testAudio.onerror = () => resolve(false);
-            testAudio.src = 'hymne.mp3';
+            testAudio.src ='hymne.mp3';
         });
     }
     
@@ -555,3 +555,4 @@ function showWelcomeNotification() {
 // Afficher la notification après 3 secondes
 
 setTimeout(showWelcomeNotification, 3000);
+
